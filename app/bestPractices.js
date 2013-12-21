@@ -17,9 +17,9 @@ define(function() {
 
     functions : function(flag) {
       if (flag) {
-        function getValue() { return 'a'; }
+        var getValue = function(){ return 'a'; }
       } else {
-        function getValue() { return 'b'; }
+        var getValue = function(){ return 'b'; }
       }
 
       return getValue();
