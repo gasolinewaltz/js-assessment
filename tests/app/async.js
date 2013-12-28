@@ -16,7 +16,9 @@ define([
       }
 
       answers.async(true).then(function(result) {
+
         flag = result;
+
         expect(flag).to.eql(true);
         finish(done);
       });
